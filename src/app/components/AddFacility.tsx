@@ -150,10 +150,7 @@ const AddFacilityForm: React.FC<AddFacilityFormProps> = ({
     };
 
     try {
-      await axios.post(
-        "https://zipatala.health.gov.mw/api/facilities",
-        newFacility
-      );
+      await axios.post("http://localhost:3001/api/facilities");
       onAdd();
       onClose();
     } catch (error) {
