@@ -1,6 +1,4 @@
 "use server"
-// server.js
-
 const express = require('express');
 const { PrismaClient } = require('@prisma/client');
 
